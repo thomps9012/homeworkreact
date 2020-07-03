@@ -1,3 +1,6 @@
+import React from 'react';
+import "../styles/SearchBox";
+
 function SearchBox({ handleSearchChange }) {
     return (
       <div className="searchbox">
