@@ -78,7 +78,7 @@ export default class DataArea extends Component {
         <div className="data-area">
           <DataTable
            // we will need to pass in props for headings, users, and handlesort here to DataTable
-
+          
           />
         </div>
       </>

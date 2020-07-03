@@ -1,7 +1,9 @@
 import React from 'react';
 import "../styles/SearchBox.css";
 
-function SearchBox({ handleSearchChange }) {
+
+//unsure about the handleSearchChange functionality
+function SearchBox(props) {
     return (
       <form className="search">
       <div className="form-group">
