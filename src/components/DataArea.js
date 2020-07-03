@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "../styles/DataArea.css";
 import Nav from "./Nav";
 import DataTable from "./DataTable";
-
+import API from "../utils/API";
 
 export default class DataArea extends Component {
   state = {
@@ -60,13 +60,14 @@ export default class DataArea extends Component {
     const filter = event.target.value;
     const filteredList = this.state.users.filter(item => {
       // merge data together, then see if user input is anywhere inside
+      this.setState({ filteredList: filter })
     });
     this.setState({ filteredUsers: filteredList });
   }
 
   componentDidMount() {
     API.getUsers().then(results => {
-      
+
     });
   }
 
